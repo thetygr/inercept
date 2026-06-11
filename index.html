@@ -1256,20 +1256,20 @@
       <form class="contact-form" onsubmit="handleSubmit(event)">
         <div class="form-row">
           <div class="form-field">
-            <input type="text" placeholder="First name" required>
+            <input type="text" name="first_name" placeholder="First name" required>
           </div>
           <div class="form-field">
-            <input type="text" placeholder="Last name" required>
+            <input type="text" name="last_name" placeholder="Last name" required>
           </div>
         </div>
         <div class="form-field">
-          <input type="email" placeholder="Email address" required>
+          <input type="email" name="reply_email" placeholder="Email address" required>
         </div>
         <div class="form-field">
-          <input type="text" placeholder="Organization or fund">
+          <input type="text" name="organization" placeholder="Organization or fund">
         </div>
         <div class="form-field">
-          <textarea placeholder="Tell us about your interest in Inercept..."></textarea>
+          <textarea name="message" placeholder="Tell us about your interest in Inercept..."></textarea>
         </div>
         <button type="submit" class="form-submit">Send Inquiry</button>
         <div class="form-note">
@@ -1331,6 +1331,26 @@ sections.forEach(s => sectionObserver.observe(s));
 // Form submit
 function handleSubmit(e) {
   e.preventDefault();
+
+  const first   = (e.target.first_name.value   || '').trim();
+  const last    = (e.target.last_name.value    || '').trim();
+  const email   = (e.target.reply_email.value  || '').trim();
+  const org     = (e.target.organization.value || '').trim();
+  const msg     = (e.target.message.value      || '').trim();
+
+  const subject = encodeURIComponent(
+    'Inercept Investor Inquiry' + (first || last ? ' - ' + first + ' ' + last : '')
+  );
+
+  const body = encodeURIComponent(
+    'Name: ' + first + ' ' + last + '\n' +
+    'Email: ' + email + '\n' +
+    'Organization: ' + (org || 'Not provided') + '\n\n' +
+    'Message:\n' + (msg || 'No message provided.')
+  );
+
+  window.location.href = 'mailto:tyler.gray@cuanschutz.edu?subject=' + subject + '&body=' + body;
+
   e.target.style.display = 'none';
   document.getElementById('form-success').style.display = 'block';
 }
