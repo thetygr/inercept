@@ -67,6 +67,17 @@ A 2026 third-party market report estimated the global head-protection-equipment 
 
 **Public-material rule:** label TAM figures by market definition and source. Project-specific segment rollups require source-level validation before circulation.
 
+## Market projection arithmetic
+
+The investor materials state a **$3.9B 2024 sports-helmet market** growing at **6.8% CAGR** while also showing a **$7.4B 2030** cover figure.
+
+Those figures are not internally equivalent:
+
+- $3.9B compounded at 6.8% for six years is approximately **$5.79B in 2030**.
+- Reaching $7.4B from a $3.9B 2024 base by 2030 requires approximately **11.3% CAGR**.
+
+**Public-material rule:** if the $7.4B figure refers to a broader head-protection market rather than the sports-helmet segment, label the category explicitly and source it separately. Do not present the $3.9B base, 6.8% CAGR, and $7.4B endpoint as one continuous forecast.
+
 ## IP and trademark claims
 
 Project materials contain statements regarding provisional-patent status, prior-art search results, and trademark screening. These are **project-reported legal/IP statements** and are not independently verified by this evidence register.
