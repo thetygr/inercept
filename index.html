@@ -670,32 +670,32 @@
       University of Colorado Boulder
     </div>
     <div style="display:flex;gap:12px;align-items:center;">
-      <div class="techstars-badge">Techstars Portfolio Candidate</div>
+      <div class="techstars-badge">Techstars Founder Catalyst</div>
       <div class="techstars-badge" style="color:var(--cu-gold);border-color:var(--cu-gold);">CU Ventures · EASE Program</div>
     </div>
   </div>
 
   <div class="cover-hero">
-    <div class="cover-eyebrow">Provisional Patent Pending &nbsp;·&nbsp; Confidential Investor Briefing &nbsp;·&nbsp; 2025</div>
+    <div class="cover-eyebrow">Project-Reported IP Status &nbsp;·&nbsp; Confidential Investor Briefing &nbsp;·&nbsp; 2026 Review</div>
     <div class="cover-title">In<span>er</span>cept<span style="font-size:28px;color:var(--gold);vertical-align:super;">™</span></div>
     <div class="cover-subtitle">
-      The world's first active rotational attenuation system for wearable protective equipment - 
+      An active rotational attenuation concept for wearable protective equipment - 
       deploying a control moment gyroscope array to generate real-time counter-torque 
       against angular head acceleration.
     </div>
 
     <div class="cover-metrics">
       <div class="cover-metric">
-        <div class="metric-val">$7.4B</div>
-        <div class="metric-label">Protective Headgear TAM (2030E)</div>
+        <div class="metric-val">~$7.7B</div>
+        <div class="metric-label">Head-protection equipment market (2030 external est.)</div>
       </div>
       <div class="cover-metric">
-        <div class="metric-val">0</div>
-        <div class="metric-label">Active CMG competitors in space</div>
+        <div class="metric-val">CMG</div>
+        <div class="metric-label">Active counter-torque architecture</div>
       </div>
       <div class="cover-metric">
-        <div class="metric-val">87%</div>
-        <div class="metric-label">TBIs caused by rotational accel.</div>
+        <div class="metric-val">15–30 ms</div>
+        <div class="metric-label">Typical NFL helmet-to-ground impact duration</div>
       </div>
       <div class="cover-metric">
         <div class="metric-val">400+</div>
@@ -730,7 +730,7 @@
     <div class="section-title">Passive helmets cannot address the root cause of TBI.</div>
     <div class="section-body">
       <p>Every helmet on the market today - from MIPS-equipped cycling helmets to NFL-certified football helmets - is a <strong>passive energy-absorbing system.</strong> These devices attenuate linear acceleration with foam compression and structural deformation. They do not generate counter-force. They cannot respond to rotational events in real time. They absorb; they do not oppose.</p>
-      <p>Neuroscientific consensus - anchored in the work of researchers at Stanford, Virginia Tech, and NFLPA-funded labs - identifies <strong>rotational (angular) head acceleration</strong> as the primary biomechanical driver of diffuse axonal injury, chronic traumatic encephalopathy (CTE), and subconcussive accumulation damage. The brain tolerates linear forces orders of magnitude better than angular ones.</p>
+      <p>Head-injury biomechanics are multi-factorial. <strong>Rotational kinematics</strong> can contribute to shear strain and diffuse brain loading, while linear acceleration and rotational velocity also materially influence injury risk. The engineering objective is therefore to reduce harmful rotational motion without assuming that a single kinematic variable defines concussion risk.</p>
     </div>
 
     <div class="callout">
@@ -739,7 +739,7 @@
 
     <!-- Chart 1: Passive vs Active Response -->
     <div class="chart-wrap">
-      <div class="chart-title">Fig. 1 - Rotational Acceleration Attenuation — Passive vs. Active Systems (rad/s²)</div>
+      <div class="chart-title">Fig. 1 - Illustrative Rotational-Acceleration Response — Passive vs. Active Concept Model (rad/s²)</div>
       <canvas id="chart1" width="780" height="220"></canvas>
       <div style="font-size:11px;color:var(--mist);margin-top:10px;font-family:'JetBrains Mono',monospace;">
         X-axis - Time (ms) &nbsp;|&nbsp; Y-axis - Head Angular Acceleration (rad/s²) &nbsp;|&nbsp; Simulated impact at t = 15 ms
@@ -747,12 +747,12 @@
     </div>
 
     <div class="section-body">
-      <p>MIPS - the current market leader at approximately $1.2 billion market capitalization with more than 400 patents - reduces relative rotational motion between the liner and shell by introducing a sliding layer. It attenuates up to 40% of rotational energy passively and only at the interface layer. Inercept actively produces counter-torque across the entire helmet mass, measured experimentally to reduce angular acceleration by a projected <strong>65 – 78%</strong> in modeled impact scenarios.</p>
+      <p>Mips is an established helmet-safety ingredient brand with more than 400 granted patents and technology designed to reduce rotational motion through a low-friction interface. Inercept proposes a different mechanism: active counter-torque. The <strong>65–78%</strong> attenuation range shown here is an internal modeling target, <strong>not experimental performance data</strong>, and must be validated on benchtop and instrumented headform testing.</p>
     </div>
   </div>
 
   <div class="page-footer">
-    <span>Inercept™ Investor Briefing — 2025</span>
+    <span>Inercept™ Investor Briefing — 2026 Review</span>
     <span>Page 2 of 6</span>
   </div>
 </div>
@@ -910,7 +910,7 @@
 
   </div>
   <div class="page-footer">
-    <span>Inercept™ Investor Briefing — 2025</span>
+    <span>Inercept™ Investor Briefing — 2026 Review</span>
     <span>Page 3 of 6</span>
   </div>
 </div>
@@ -922,10 +922,12 @@
 <div class="page">
   <div class="section">
     <div class="section-eyebrow">Technical Validation</div>
-    <div class="section-title">Physics of Counter-Torque Generation — Worked Equations</div>
+    <div class="section-title">Physics of Counter-Torque Generation — Corrected Concept Equations</div>
+
+    <div class="callout" style="font-style:normal;border-left-color:var(--teal);">Evidence status: concept-stage engineering model. No helmet-level attenuation percentage, runtime, safety margin, or injury-risk reduction should be described as experimentally established until measured on instrumented benchtop/headform tests.</div>
 
     <div class="section-body">
-      <p>The fundamental mechanism of Inercept is angular momentum exchange. The following derivations show how the CMG array produces output torque sufficient to attenuate physiologically dangerous rotational head accelerations.</p>
+      <p>The fundamental mechanism is angular-momentum exchange. The equations below correct the arithmetic in the original concept deck and show the nominal torque implied by the stated design inputs. They are <strong>engineering model calculations, not validated device performance</strong>; rotor stress, gimbal dynamics, power, structural coupling, singularities, and human-head/neck loads require prototype testing.</p>
     </div>
 
     <!-- EQ 1: Gyroscopic torque -->
@@ -942,7 +944,7 @@
       <div class="eq-result">
         τ_out = (2.4 × 10⁻⁴ kg·m²) × (15,700 rad/s) × (180 rad/s)<br>
         τ_out = (2.4 × 10⁻⁴) × (2,826,000) N·m<br>
-        <strong>τ_out ≈ 0.68 N·m per CMG unit</strong>
+        <strong>τ_out ≈ 678 N·m per CMG unit (nominal mathematical result from stated inputs)</strong>
       </div>
     </div>
 
@@ -958,24 +960,24 @@
       </div>
       <div class="eq-result">
         τ_array = 3 × 0.68 N·m × 0.578<br>
-        <strong>τ_array ≈ 1.18 N·m effective counter-torque vector</strong>
+        <strong>τ_array ≈ 1.18 kN·m simplified projected array torque</strong><br><span style="color:var(--mist);font-size:11px;">Actual 3-axis CMG torque requires vector steering-law analysis and singularity management; this scalar projection is not a validated array model.</span>
       </div>
     </div>
 
     <!-- EQ 3: Required attenuation torque -->
     <div class="equation-block">
-      <div class="eq-label">Equation 3 - Required Counter-Torque for Safe Angular Acceleration Threshold</div>
-      <div class="eq-main">τ_required = I_head · (α_impact - α_safe)</div>
+      <div class="eq-label">Equation 3 - Illustrative Counter-Torque Delta Using a Historical Reference Value</div>
+      <div class="eq-main">τ_delta = I_head · (α_impact - α_reference)</div>
       <div class="eq-subs">
         where:<br>
         <span>I_head</span> - effective head moment of inertia [kg·m²] - average adult human ≈ 0.0222 kg·m² (PMHS data)<br>
         <span>α_impact</span> - measured angular acceleration at impact [rad/s²] - NFL lineman impact ≈ 4,500 rad/s²<br>
-        <span>α_safe</span> - safe physiological threshold [rad/s²] - concussion injury threshold ≈ 1,700 rad/s² (Ono et al., 1998)
+        <span>α_reference</span> - historical rotational-acceleration reference [rad/s²] = 1,700 rad/s²; <strong>not a universal safe/concussion threshold</strong>
       </div>
       <div class="eq-result">
         τ_required = 0.0222 kg·m² × (4,500 - 1,700) rad/s²<br>
         τ_required = 0.0222 × 2,800 N·m<br>
-        <strong>τ_required ≈ 0.62 N·m</strong> — Inercept τ_array (1.18 N·m) <strong>exceeds requirement by 1.9×</strong>
+        <strong>τ_delta ≈ 62.2 N·m</strong> — the simplified nominal array result (~1.18 kN·m) is about <strong>18.9×</strong> this illustrative delta, but this is <strong>not a safety margin</strong> and must not be interpreted as predicted injury protection.
       </div>
     </div>
 
@@ -989,14 +991,14 @@
         <span>t_actuate</span> - servo gimbal response time [ms] ≈ 0.8 ms to begin slew
       </div>
       <div class="eq-result">
-        t_total = 1.0 + 0.35 + 0.8 ms = <strong>2.15 ms total latency</strong><br>
-        Typical NFL impact duration - 15 – 25 ms &nbsp;·&nbsp; Inercept engages within the first 14% of impact duration.
+        t_total = 1.0 + 0.35 + 0.8 ms = <strong>2.15 ms target latency</strong><br>
+        Published NFL helmet-to-ground impacts are commonly on the order of 15–30 ms. If each subsystem meets the stated targets, 2.15 ms corresponds to roughly 7–14% of that interval; actuator authority during the remaining event still requires validation.
       </div>
     </div>
 
     <!-- Chart 2: Torque vs angular accel -->
     <div class="chart-wrap">
-      <div class="chart-title">Fig. 3 - Inercept CMG Array Output Torque vs. Flywheel Speed (N·m vs. rad/s) at Three Gimbal Slew Rates</div>
+      <div class="chart-title">Fig. 3 - Nominal Single-CMG Torque Model vs. Flywheel Speed at Three Gimbal Slew Rates</div>
       <canvas id="chart2" width="780" height="220"></canvas>
       <div style="font-size:11px;color:var(--mist);margin-top:10px;font-family:'JetBrains Mono',monospace;">
         X-axis - Flywheel angular speed ω_fw (rad/s, 0 – 20,000) &nbsp;|&nbsp; Y-axis - Output torque τ_out (N·m) &nbsp;|&nbsp; I_fw = 2.4 × 10⁻⁴ kg·m²
@@ -1005,7 +1007,7 @@
 
   </div>
   <div class="page-footer">
-    <span>Inercept™ Investor Briefing — 2025</span>
+    <span>Inercept™ Investor Briefing — 2026 Review</span>
     <span>Page 4 of 6</span>
   </div>
 </div>
@@ -1034,8 +1036,10 @@
       </div>
     </div>
 
+    <div class="callout" style="font-style:normal;">Market figures are directional investor benchmarks and should be refreshed immediately before external circulation. Mips business-model and patent-portfolio statements are externally verifiable; project-specific TAM segmentation remains a project model.</div>
+
     <div class="section-body">
-      <p>Inercept enters with a <strong>deliberate ingredient brand licensing model</strong> - the same go-to-market architecture that made MIPS a $1.2 billion company from a single patent. MIPS spent 14 years establishing this pathway by trial and error. Inercept enters with that model already validated, reducing strategic friction and capital requirements for the initial commercialization phase.</p>
+      <p>Inercept proposes a <strong>deliberate ingredient-brand licensing model</strong>. Mips demonstrates that helmet safety technology can scale through OEM integration, licensing, and visible ingredient branding; Mips currently reports roughly 60 patent families and more than 400 granted patents. Inercept would need independent product validation, protectable IP, OEM integration data, and a regulatory/testing pathway before that model can be treated as commercially validated for this technology.</p>
     </div>
 
     <!-- Competition Table -->
@@ -1112,7 +1116,7 @@
 
   </div>
   <div class="page-footer">
-    <span>Inercept™ Investor Briefing — 2025</span>
+    <span>Inercept™ Investor Briefing — 2026 Review</span>
     <span>Page 5 of 6</span>
   </div>
 </div>
@@ -1131,7 +1135,7 @@
         <div style="font-size:12px;font-weight:600;color:var(--white);margin-bottom:14px;text-transform:uppercase;letter-spacing:0.08em;">IP Architecture</div>
         <div style="font-size:13px;color:var(--silver);line-height:1.75;">
           <p>The provisional patent covers the full system - CMG array topology, closed-loop control architecture, multi-modal sensor fusion pipeline, Halbach magnetic bearing integration, and the seven-layer autonomous safety hierarchy. The term "closed-loop angular momentum management" is intentionally excluded from the title to avoid triggering spacecraft prior-art obviousness arguments, but the concept is embedded in the disclosure as "closed-loop control architecture" operating at 1,000 Hz with MPC.</p>
-          <p style="margin-top:12px;">A prior art search confirms <strong>no existing patents combine active CMG torque generation with any form of protective headgear</strong> - a genuine white space in a mature patent landscape.</p>
+          <p style="margin-top:12px;">The project reports a preliminary prior-art search that has not identified a directly matching active-CMG protective-headgear system. This should be described as <strong>potential white space</strong>, not a confirmed freedom-to-operate or patentability opinion; formal patent counsel review is required.</p>
           <p style="margin-top:12px;">The trademark <strong>"Inercept"</strong> cleared a full TESS search with no conflicts. "GyroHelm" was abandoned due to prior registrations.</p>
         </div>
       </div>
@@ -1160,8 +1164,8 @@
           </div>
           <div class="tl-item">
             <div class="tl-date">2026</div>
-            <div class="tl-event">NOCSAE / NFL Pilot Program</div>
-            <div class="tl-desc">Regulatory validation — NOCSAE ND081 compliance testing initiated</div>
+            <div class="tl-event">NOCSAE Test-Method Development Pathway</div>
+            <div class="tl-desc">ND081 is a pneumatic-ram test method that captures linear and rotational acceleration; determine the applicable performance/certification pathway with NOCSAE before claiming compliance.</div>
           </div>
           <div class="tl-item">
             <div class="tl-date">2027</div>
@@ -1196,7 +1200,7 @@
       </div>
       <div class="risk-card">
         <div class="rc-head">Power Budget Risk</div>
-        <div class="rc-body">Li-ion at 180 Wh/kg supports 4+ hours of active operation. Vacuum housing reduces air-drag spin-down losses. Regenerative braking during deceleration recovers energy back to the cell.</div>
+        <div class="rc-body">180 Wh/kg is a cell-level specific-energy assumption, not a demonstrated system runtime. Endurance remains TBD pending a complete rotor/motor, gimbal-actuator, control-electronics, thermal, and vacuum-system power budget. Regenerative energy recovery should remain a design hypothesis until measured.</div>
       </div>
       <div class="risk-card">
         <div class="rc-head">Regulatory Timeline Risk</div>
@@ -1204,7 +1208,7 @@
       </div>
       <div class="risk-card">
         <div class="rc-head">Competitive Replication Risk</div>
-        <div class="rc-body">The prior-art gap is confirmed. MIPS built 400 patents over 14 years post-launch. The PCT filing preserves international rights. First-mover in active CMG headgear is defensible with correct prosecution strategy.</div>
+        <div class="rc-body">Mips demonstrates the value of a broad helmet-safety IP portfolio, but Inercept's defensibility depends on formal patentability/FTO analysis, claim scope, prosecution outcomes, and experimentally differentiated performance. Treat first-mover advantage as a strategy hypothesis, not an established moat.</div>
       </div>
     </div>
 
@@ -1246,7 +1250,7 @@
   </div>
 
   <div class="page-footer">
-    <span>Inercept™ Investor Briefing — 2025</span>
+    <span>Inercept™ Investor Briefing — 2026 Review</span>
     <span>Page 6 of 6</span>
   </div>
 </div>
@@ -1355,7 +1359,7 @@
 
   // Legend
   const lx = pad.left+cw-200, ly = pad.top+16;
-  [[`#E05252`, 'Unprotected impact'], [`#C8A84B`, 'Passive (MIPS-class)'], [`#1ECAC8`, 'Inercept™ Active']].forEach(([c,l],i) => {
+  [[`#E05252`, 'Illustrative unprotected impact'], [`#C8A84B`, 'Illustrative passive scenario'], [`#1ECAC8`, 'Illustrative active target']].forEach(([c,l],i) => {
     ctx.fillStyle = c; ctx.fillRect(lx, ly+i*18-7, 22, 3);
     ctx.fillStyle = '#8A97AD'; ctx.font = '10px Inter'; ctx.textAlign = 'left';
     ctx.fillText(l, lx+28, ly+i*18+1);
@@ -1363,7 +1367,7 @@
 
   // Safety threshold label
   ctx.fillStyle = '#F0922B'; ctx.font = '10px JetBrains Mono'; ctx.textAlign = 'left';
-  ctx.fillText('Concussion threshold — 1,700 rad/s²', pad.left+6, yPx(1700)-5);
+  ctx.fillText('Historical 1,700 rad/s² reference — not a universal concussion threshold', pad.left+6, yPx(1700)-5);
 })();
 
 // ── Chart 2: Torque vs Flywheel Speed ──
@@ -1379,14 +1383,14 @@
   const slews = [60, 120, 180]; // rad/s
   const colors = ['#2A9D8F','#1ECAC8','#C8A84B'];
   const omegaMax = 20000;
-  const tauMax = I_fw * omegaMax * 180; // 0.864
+  const tauMax = I_fw * omegaMax * 180; // 864 N·m
 
   function xPx(v) { return pad.left + (v/omegaMax)*cw; }
   function yPx(v) { return pad.top + ch - (v/tauMax)*ch; }
 
   // Grid
   ctx.strokeStyle = 'rgba(42,51,71,0.8)'; ctx.lineWidth = 0.7;
-  [0,0.2,0.4,0.6,0.8].forEach(y => {
+  [0,200,400,600,800].forEach(y => {
     ctx.beginPath(); ctx.moveTo(pad.left, yPx(y)); ctx.lineTo(pad.left+cw, yPx(y)); ctx.stroke();
   });
   [0,5000,10000,15000,20000].forEach(x => {
@@ -1409,19 +1413,19 @@
   ctx.arc(xPx(15700), yPx(I_fw * 15700 * 180), 5, 0, Math.PI*2);
   ctx.fill();
   ctx.fillStyle = '#C4CDD8'; ctx.font = '10px JetBrains Mono';
-  ctx.fillText('Target: 15,700 rad/s → τ = 0.68 N·m', xPx(15700)+8, yPx(I_fw*15700*180)+4);
+  ctx.fillText('Nominal math: 15,700 rad/s → τ ≈ 678 N·m', xPx(15700)+8, yPx(I_fw*15700*180)+4);
 
   // Required line
   ctx.strokeStyle = 'rgba(224,82,82,0.5)'; ctx.setLineDash([5,3]); ctx.lineWidth = 1;
-  const tauReq = 0.62;
+  const tauReq = 62.16;
   ctx.beginPath(); ctx.moveTo(pad.left, yPx(tauReq)); ctx.lineTo(pad.left+cw, yPx(tauReq)); ctx.stroke();
   ctx.setLineDash([]);
   ctx.fillStyle = '#E05252'; ctx.font = '10px JetBrains Mono';
-  ctx.fillText('Required τ = 0.62 N·m (NFL impact threshold)', pad.left+6, yPx(tauReq)-5);
+  ctx.fillText('Illustrative τ_delta ≈ 62 N·m from stated inertia/kinematics', pad.left+6, yPx(tauReq)-5);
 
   // Axes
   ctx.fillStyle = '#8A97AD'; ctx.font = '11px JetBrains Mono'; ctx.textAlign = 'right';
-  [0,0.2,0.4,0.6,0.8].forEach(y => { ctx.fillText(y.toFixed(1), pad.left-6, yPx(y)+4); });
+  [0,200,400,600,800].forEach(y => { ctx.fillText(y.toFixed(0), pad.left-6, yPx(y)+4); });
   ctx.textAlign = 'center';
   [0,5000,10000,15000,20000].forEach(x => { ctx.fillText(x.toLocaleString(), xPx(x), pad.top+ch+16); });
   ctx.fillStyle = '#8A97AD'; ctx.font = '10px Inter';
